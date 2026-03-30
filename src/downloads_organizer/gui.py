@@ -68,8 +68,6 @@ class App(ctk.CTk):
         self._build_right(right)
 
     def _build_left(self, parent: ctk.CTkFrame) -> None:
-        pad = {"padx": 12, "pady": 4}
-
         # ── Watch folder ──────────────────────────────────────────────
         ctk.CTkLabel(parent, text="Watch Folder", font=ctk.CTkFont(weight="bold")).grid(
             row=0, column=0, columnspan=2, sticky="w", padx=12, pady=(14, 2)
@@ -85,22 +83,22 @@ class App(ctk.CTk):
 
         # ── Options ───────────────────────────────────────────────────
         ctk.CTkLabel(parent, text="Options", font=ctk.CTkFont(weight="bold")).grid(
-            row=2, column=0, columnspan=2, sticky="w", **pad, pady=(14, 2)
+            row=2, column=0, columnspan=2, sticky="w", padx=12, pady=(14, 2)
         )
         self._dry_run_var = ctk.BooleanVar(value=self._config.dry_run)
         ctk.CTkCheckBox(parent, text="Dry Run (preview only)", variable=self._dry_run_var,
                         command=self._on_option_change).grid(
-            row=3, column=0, columnspan=2, sticky="w", **pad
+            row=3, column=0, columnspan=2, sticky="w", padx=12, pady=4
         )
         self._auto_watch_var = ctk.BooleanVar(value=self._config.auto_watch)
         ctk.CTkCheckBox(parent, text="Auto-Watch on Startup", variable=self._auto_watch_var,
                         command=self._on_option_change).grid(
-            row=4, column=0, columnspan=2, sticky="w", **pad
+            row=4, column=0, columnspan=2, sticky="w", padx=12, pady=4
         )
 
         # ── Categories ────────────────────────────────────────────────
         ctk.CTkLabel(parent, text="Categories", font=ctk.CTkFont(weight="bold")).grid(
-            row=5, column=0, columnspan=2, sticky="w", **pad, pady=(14, 2)
+            row=5, column=0, columnspan=2, sticky="w", padx=12, pady=(14, 2)
         )
 
         self._cat_scroll = ctk.CTkScrollableFrame(parent, label_text="", height=220)
