@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "downloads-organizer"
+version = "0.1.0"
+description = "A desktop app to automatically organize your Downloads folder by file type"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.11"
+authors = [{ name = "tianli" }]
+keywords = ["downloads", "organizer", "file-manager", "automation", "desktop"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Desktop Environment :: File Managers",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "customtkinter>=5.2.0",
+    "watchdog>=4.0.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.4.0"]
+
+[project.scripts]
+downloads-organizer = "downloads_organizer.gui:main"
+
+[project.urls]
+Homepage = "https://github.com/zengtianli/downloads-organizer"
+"Bug Tracker" = "https://github.com/zengtianli/downloads-organizer/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501", "B008", "SIM108"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
