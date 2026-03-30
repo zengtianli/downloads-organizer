@@ -9,7 +9,7 @@
 
 ---
 
-![downloads-organizer demo](docs/screenshots/demo.svg)
+![downloads-organizer demo](docs/screenshots/demo.png)
 
 ---
 

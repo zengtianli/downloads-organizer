@@ -9,7 +9,7 @@ Automatically organize your Downloads folder by file type — with real-time wat
 
 ---
 
-![downloads-organizer demo](docs/screenshots/demo.svg)
+![downloads-organizer demo](docs/screenshots/demo.png)
 
 ---
 
