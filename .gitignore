@@ -8,3 +8,17 @@ build/
 .DS_Store
 .ruff_cache/
 .pytest_cache/
+
+
+# Virtual env
+venv/
+
+# Environment
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Cache
+.mypy_cache/
