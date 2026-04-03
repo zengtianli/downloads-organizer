@@ -22,3 +22,8 @@ venv/
 
 # Cache
 .mypy_cache/
+
+# Baseline (auto-added by /groom)
+*$py.class
+Thumbs.db
+*.swp
