@@ -4,7 +4,7 @@
 
 | 项目 | 路径/值 |
 |------|---------|
-| 项目根 | `/Users/tianli/Dev/labs/downloads-organizer` |
+| 项目根 | `/Users/tianli/Dev/apps/infra/downloads-organizer` |
 | 源码 | `src/downloads_organizer/` |
 | 入口（GUI） | `src/downloads_organizer/gui.py` → `main()` |
 | 入口（CLI） | `src/downloads_organizer/__main__.py` |
@@ -65,4 +65,4 @@ tests/
 - 无需外部 API，不依赖 `~/.personal_env`
 - 修改分类规则：编辑 `config.py` 中的默认 category 映射或用户 config.yaml
 - GUI 与 core 逻辑分离，`core.py` 可独立测试无 GUI 依赖
-- Raycast 快捷启动可添加到 `~/Dev/devtools/scripts/raycast/commands/`
+- Raycast 快捷启动可添加到 `~/Dev/tools/dev/scripts/raycast/commands/`
