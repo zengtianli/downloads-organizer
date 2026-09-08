@@ -1,0 +1,13 @@
+name: downloads-organizer
+function: 按文件类型整理下载目录的 Python 桌面应用，支持 GUI 和 watch/dry-run CLI。
+origin: own
+lifecycle: incubating
+form: mac
+key_scripts:
+  - src/downloads_organizer/gui.py
+  - src/downloads_organizer/__main__.py
+  - src/downloads_organizer/core.py
+depends_on: []
+notes: |
+  独立应用，2026-09-08 从 Dev/apps/infra 归位。
+  当前系统自动整理仍由 Dev/tools/dev 的 downloads_triage 管线执行；未启用本应用监视器。

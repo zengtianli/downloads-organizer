@@ -4,7 +4,7 @@
 
 | 项目 | 路径/值 |
 |------|---------|
-| 项目根 | `/Users/tianli/Dev/apps/infra/downloads-organizer` |
+| 项目根 | `/Users/tianli/Apps/mac/downloads-organizer` |
 | 源码 | `src/downloads_organizer/` |
 | 入口（GUI） | `src/downloads_organizer/gui.py` → `main()` |
 | 入口（CLI） | `src/downloads_organizer/__main__.py` |
